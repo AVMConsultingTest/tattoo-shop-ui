@@ -1,0 +1,287 @@
+<div class="appointmentSection">
+    <div class="row imageBackground">
+        <!-- <div class="col-md-4">
+            <img src="./../../../assets/images/appointment/appointment_bg.png" alt="">
+        </div> -->
+        <div class="col-12 col-md-8 col-sm-12 offset-md-4  p-5">
+            <section *ngIf="selectedTab == 'userDetails'">
+                <div class="row pe-4">
+                    <div class="col-md-6 py-4">
+                        <p class="fs-4">Name</p>
+                        <input type="text" class="inputTextBox w-100 fs-4 pb-2">
+                    </div>
+                    <div class="col-md-6 py-4">
+                        <p class="fs-4">Tattoo Size</p>
+                        <input type="text" class="inputTextBox w-100 fs-4 pb-2">
+                    </div>
+                    <div class="col-md-6 py-4">
+                        <p class="fs-4">Email</p>
+                        <input type="email" class="inputTextBox w-100 fs-4 pb-2">
+                    </div>
+                    <div class="col-md-6 py-4">
+                        <p class="fs-4">Reference Picture</p>
+                        <input type="file" class="inputTextBox w-100 fs-4 pb-2">
+                    </div>
+                    <div class="col-md-6 py-4">
+                        <p class="fs-4">Phone</p>
+                        <input type="text" class="inputTextBox w-100 fs-4 pb-2" placeholder="Optional">
+                    </div>
+                    <div class="col-md-6 py-4">
+                        <p class="fs-4">Desired Placement</p>
+                        <select class="inputTextBox w-100 fs-4 pb-2">
+                            <option selected>Full Sleeves(inner and outer)</option>
+                            <option>Half Sleeves(inner and outer)</option>
+                            <option>Full Sleeves(inner)</option>
+                            <option>Full Sleeves(outer)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 py-4">
+                        <p class="fs-4">Language</p>
+                        <select class="inputTextBox w-100 fs-4 pb-2">
+                            <option selected>English</option>
+                            <option>French</option>
+                            <option>German</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12 py-4">
+                        <p class="fs-4 pb-4">Briefly describe your tattoo idea</p>
+                        <input type="text" class="inputTextBox w-100 fs-4 px-4">
+                    </div>
+                    <div class="col-6">
+                        <button  class="fontBannerButton fontBannerSize mt-3" (click)="redirect('userDetails')">MY APPOINTMENT</button>
+                    </div>
+                    <div class="col-6 text-end">
+                        <button class="fontBannerButton fontBannerSize mt-3" (click)="redirect('artist')">SEND</button>
+                    </div>
+                </div>
+            </section>
+            <section *ngIf="selectedTab == 'artist'">
+                <ul class="list-unstyled fs-2">
+                    <li class="border-2">
+                        <p class="fontHeader fs-4 text-center m-0">Choose Your Artist</p>     
+                    </li>
+                    <div class="borderBox">
+                        <li class="borderBottom border-2 border-dark p-3" (click)="redirect('calendar')">
+                            <div class="row">
+                            <div class="col-sm-2">
+                                <img src="./../../../assets/images/appointment/Ellipse 39.png" alt="">
+                            </div>
+                            <div class="col-sm-8">
+                                <h2>John Carter (@john_carter</h2>
+                                <p class="fs-6 text-justify">
+                                    In publishing and graphic design, Lorem ipsum is a placeholder text 
+                                    commonly used to demonstrate the visual form of a document or a typeface without 
+                                    relying on meaningful content.
+                                </p>
+                            </div>
+                            <div class="col-sm-2">
+                                <img class="iconImage" src="./../../../assets/images/appointment/info_icon.png" alt="">
+                            </div>
+                            </div>
+                        </li>
+                        <li class="borderBottom border-2 border-dark p-3" (click)="redirect('calendar')">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <img class="iconImage" src="./../../../assets/images/appointment/info_icon.png" alt="">
+                                </div>
+                                <div class="col-sm-8">
+                                    <h2>John Carter (@john_carter</h2>
+                                    <p class="fs-6 text-justify">
+                                        In publishing and graphic design, Lorem ipsum is a placeholder text 
+                                        commonly used to demonstrate the visual form of a document or a typeface without 
+                                        relying on meaningful content.
+                                    </p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <img src="./../../../assets/images/appointment/Ellipse 40.png" alt="">
+                                </div>
+                                </div>
+                        </li>
+                        <li class="borderBottom border-2 border-dark p-3" (click)="redirect('calendar')">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <img src="./../../../assets/images/appointment/Ellipse 41.png" alt="">
+                                </div>
+                                <div class="col-sm-8">
+                                    <h2>John Carter (@john_carter</h2>
+                                    <p class="fs-6 text-justify">
+                                        In publishing and graphic design, Lorem ipsum is a placeholder text 
+                                        commonly used to demonstrate the visual form of a document or a typeface without 
+                                        relying on meaningful content.
+                                    </p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <img class="iconImage" src="./../../../assets/images/appointment/info_icon.png" alt="">
+                                </div>
+                                </div>
+                        </li>
+                        <li class="borderBottom border-2 border-dark p-3" (click)="redirect('calendar')">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <img class="iconImage" src="./../../../assets/images/appointment/info_icon.png" alt="">
+                                </div>
+                                <div class="col-sm-8">
+                                    <h2>John Carter (@john_carter</h2>
+                                    <p class="fs-6 text-justify">
+                                        In publishing and graphic design, Lorem ipsum is a placeholder text 
+                                        commonly used to demonstrate the visual form of a document or a typeface without 
+                                        relying on meaningful content.
+                                    </p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <img src="./../../../assets/images/appointment/Ellipse 42.png" alt="">
+                                </div>
+                                </div>
+                        </li>
+                        <li class="borderBottom border-2 border-dark p-3" (click)="redirect('calendar')">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <img src="./../../../assets/images/appointment/Ellipse 43.png" alt="">
+                                </div>
+                                <div class="col-sm-8">
+                                    <h2>John Carter (@john_carter</h2>
+                                    <p class="fs-6 text-justify">
+                                        In publishing and graphic design, Lorem ipsum is a placeholder text 
+                                        commonly used to demonstrate the visual form of a document or a typeface without 
+                                        relying on meaningful content.
+                                    </p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <img class="iconImage" src="./../../../assets/images/appointment/info_icon.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+                <div class="pt-4 row">
+                    <div class="col-md-6">
+                        <button  class="fontBannerButton fontBannerSize mt-3" (click)="redirect('userDetails')">PREVIOUS</button>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <button class="fontBannerButton fontBannerSize mt-3" (click)="redirect('calendar')">NEXT</button>
+                    </div>
+                </div>
+            </section>
+            <section *ngIf="selectedTab == 'calendar'" class="calendarSection">
+                <div class="row p-4 calendarHeading">
+                    <h2 class=" m-0">Select a Date & Time</h2>  
+                </div>
+                <ul class="list-unstyled fs-2 borderBox">
+                    <!-- <li class="border-2">
+                        <p class="fontHeader fs-4 m-0">Select a Date & Time</p>  
+
+                    </li> -->
+                    <li class="border-bottom border-2 border-dark p-3" >
+                        <div class="flex justify-content-between calendarDataSection">
+
+                            <p-calendar class="max-w-full" dateFormat="dd.mm.yy" [minDate]="today" (onSelect)="selectDate()" [(ngModel)]="bookingDate" [inline]="true" ></p-calendar>
+                            
+                            <div class="bookingDate">
+                                <p>{{bookingDateSelected}}</p>
+                                <div class="">
+                                    <div *ngFor="let time of timeArray">
+                                        <button class="fontBannerButton text-center mb-3">{{time}}</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </li>
+                </ul>
+                <div class="pt-4 row">
+                    <div class="col-md-6">
+                        <button  class="fontBannerButton fontBannerSize mt-3" (click)="redirect('artist')">PREVIOUS</button>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <button class="fontBannerButton fontBannerSize mt-3" (click)="redirect('confirmDetails')">NEXT</button>
+                    </div>
+                </div>
+            </section>
+            <section *ngIf="selectedTab == 'confirmDetails'">
+                    <div class="border-2">
+                        <p class="fontHeader fs-4 text-center m-0">Confirm Your Details</p>     
+                    </div>
+                    <div class="borderBox textGrey pt-3">
+                        <div class="row">
+                            <div class="col-4 ps-4">
+                                <p>Location</p>
+                            </div>
+                            <div class="col-4">
+                                <p>United States
+                            </div>
+                            <div class="col-4">
+                                <button class="amountButton">$55</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 ps-4">
+                                <p>Tattoo Size</p>
+                            </div>
+                            <div class="col-8">
+                                <p>12 cm </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 ps-4">
+                                <p>Time</p>
+                            </div>
+                            <div class="col-8">
+                                <p>Tue, June 9, 8:00 pm </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 ps-4">
+                                <p>Artist</p>
+                            </div>
+                            <div class="col-8">
+                                <p> John Carter (@john_carter </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2 text-end">
+                                <input type="checkbox" class="inputCheckbox">
+                            </div>
+                            <div class="col-10">
+                                <span class="fs-4">I have read this waiver of liability, assumption of risk, and indemnify, fully understand its terms, 
+                                    and understand that I am giving up my rights,</span>
+                            </div>
+                        </div>
+                        <div class="p-4 row">
+                            <div class="col-md-12 text-center">
+                                <button class="fontBannerButton fontBannerSize mt-3" (click)="redirect('bookingConfirmed')">CONFIRM</button>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section *ngIf="selectedTab == 'bookingConfirmed'">
+                <div class="border-2">
+                    <p class="fontHeader fs-4 text-center m-0">Booking Confirmed</p>     
+                </div>
+                <div class="borderBox textGrey pt-3">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img src="./../../../assets/images/appointment/Rectangle 161.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p class="pText">Thank, You</p>
+                        </div>
+                    </div>
+                    <div class="p-4 row">
+                        <div class="col-md-12 text-justify">
+                            <p>Your confirmed has been confirmed</p>
+                            <p>In publishing and graphic design, Lorem ipsupublishing and graphic design, Lorem ipsum is a placeholder text</p>
+                        </div>
+                    </div>
+                    <div class="p-4 row">
+                        <div class="col-md-12 text-center">
+                            <button class="fontBannerButton fontBannerSize mt-3" (click)="redirect('userDetails')">GO TO HOME</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        </div>
+    </div>
+</div>

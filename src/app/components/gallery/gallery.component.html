@@ -1,0 +1,45 @@
+<section class="gallerySection">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="sectionHeading">GALLERY</h2>
+        </div>
+        <div class="col-md-3">
+          <img src="../../../assets/images/Gallery/Rectangle 48.png">
+          <img src="../../../assets/images/Gallery/Rectangle 49.png">  
+        </div>
+        <div class="col-md-3">
+            <img src="../../../assets/images/Gallery/Rectangle 50.png">
+            <img src="../../../assets/images/Gallery/Rectangle 51.png">  
+        </div>
+        <div class="col-md-3">
+            <img src="../../../assets/images/Gallery/Rectangle 54.png">
+            <img src="../../../assets/images/Gallery/Rectangle 55.png">  
+        </div>
+        <div class="col-md-3">
+            <img src="../../../assets/images/Gallery/Rectangle 52.png">
+            <img src="../../../assets/images/Gallery/Rectangle 53.png">  
+        </div>
+        <div class="col-md-3" *ngIf="showLess">
+            <img src="../../../assets/images/Gallery/Rectangle 48.png">
+            <img src="../../../assets/images/Gallery/Rectangle 49.png">  
+          </div>
+          <div class="col-md-3" *ngIf="showLess">
+              <img src="../../../assets/images/Gallery/Rectangle 50.png">
+              <img src="../../../assets/images/Gallery/Rectangle 51.png">  
+          </div>
+          <div class="col-md-3" *ngIf="showLess">
+              <img src="../../../assets/images/Gallery/Rectangle 54.png">
+              <img src="../../../assets/images/Gallery/Rectangle 55.png">  
+          </div>
+          <div class="col-md-3" *ngIf="showLess">
+              <img src="../../../assets/images/Gallery/Rectangle 52.png">
+              <img src="../../../assets/images/Gallery/Rectangle 53.png">  
+          </div>
+        <div class="col-12 text-end" *ngIf="!showLess" (click)="showLess = true">
+            <button  class="fontBannerButton fontBannerSize m-4 ">SHOW MORE</button>
+        </div>
+        <div class="col-12 text-end" *ngIf="showLess" (click)="showLess = false">
+            <button  class="fontBannerButton fontBannerSize m-4 ">SHOW LESS</button>
+        </div>
+    </div>
+</section>

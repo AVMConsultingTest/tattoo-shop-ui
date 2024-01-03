@@ -1,0 +1,25 @@
+.iconImage{
+    height: 40px;
+    position: absolute;
+    left: 34px;
+}
+.inputBox{
+    width: 40%;
+    height: 35px;
+}
+.btnInput{
+    height: 35px;
+}
+.ourArtistsSection{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 20px;
+}
+
+.artist-name{
+    right: 0;
+    bottom: -30px;
+    padding: 20px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+}

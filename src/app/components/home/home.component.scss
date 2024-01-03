@@ -1,0 +1,47 @@
+.p-font-fan{
+    font-family: fantasy;
+}
+
+.fontBanner{
+    font-size: 35px;
+}
+.fontBannerSize{
+    font-size: 35px;
+}
+.fontTheme{
+    color: var(--base-color);
+}
+.ourWorkSection{
+    background-color: var(--grey-color);
+}
+.whatWeDoSection{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 20px;
+}
+.testimonialSection{
+    background-color: var(--grey-color);
+    padding: 20px;
+}
+@media only screen and (max-width: 767px) and (min-width: 425px) {
+    .top-20{
+        top: 8rem;
+    }
+    .fontBanner{
+        font-size: 22px;
+    }
+    .fontBannerSize{
+        font-size: 15px;
+    }
+  }
+  @media only screen and (max-width: 424px) {
+    .top-20{
+        top: 4rem;
+    }
+    .fontBanner{
+        font-size: 16px;
+    }
+    .fontBannerSize{
+        font-size: 10px;
+    }
+  }

@@ -1,0 +1,35 @@
+.footerSection {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+.colorLightGrey{
+    color: var(--lightGrey-color);
+}
+ul {
+    list-style-type: none
+  }
+  
+  li {
+    display: grid;
+    grid-template-columns: 20px auto;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  li::before {
+    content: ">";
+    color: var(--white-color);
+  }
+
+  .footerBottom{
+    background-color: var(--darkBrown-color);
+    color: var(--white-color);
+  }
+
+  .w-12{
+    width: 12%;
+  }
+
+  .w-17{
+    width: 17%;
+  }

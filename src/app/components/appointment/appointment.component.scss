@@ -1,0 +1,123 @@
+.imageBackground{
+    background-image: url('./../../../assets/images/appointment/appointment_bg.png');
+    background-repeat: no-repeat;
+}
+.appointmentSection{
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+.inputTextBox{
+    outline: 0;
+    border-bottom: 2px solid var(--white-color) !important;
+    border:0;
+    background-color: transparent;
+    color: var(--white-color);
+}
+::placeholder{
+    color: var(--white-color);
+}
+.fontHeader{
+        font-size: 25px;
+        padding: 20px 30px;
+        border: 6px solid var(--white-color);
+        color: var(--white-color);
+        background-color: var(--base-color);
+}
+.borderBox{
+    border: 3px solid var(--white-color);
+}
+.borderBottom{
+    border-bottom: 2px solid var(--white-color);
+    border-color: var(--white-color) !important;
+}
+.iconImage{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+.amountButton{
+    border: 2px solid var(--lightGrey-color);
+    outline: 0;
+    background-color: tr;
+    color: var(--lightGrey-color);
+    border-radius: 10px;
+    padding: 5px 30px;
+}
+.inputCheckbox{
+    width: 25px;
+    height: 25px;
+    background-color: var(--black-color);
+    outline: 0;
+    opacity: 0.3;
+    border: 2px solid var(--lightGrey-color)
+}
+.pText{
+    color: var(--base-color);
+}
+
+::ng-deep{
+    .p-datepicker{
+        background-color: transparent !important;
+        border: none !important;
+    }
+    .p-calendar .p-datepicker{
+        width: 100% !important;
+    }
+    .p-datepicker table td > span{
+        border-color: var(--base-color);
+        padding: 30px;
+        // border-radius: 50%;
+    }
+    .p-datepicker table td > span.p-highlight,.p-datepicker table td.p-datepicker-today > span, .p-datepicker:not(.p-disabled) table td span:not(.p-highlight):not(.p-disabled):hover {
+        background-color: var(--base-color) !important;
+        color: var(--white-color) !important;
+        // padding: 40px;
+    }
+    .p-datepicker-calendar th,td{
+        font-size: 3rem !important;
+        font-weight: 300 !important;
+        color: var(--white-color);
+    }
+    .p-datepicker .p-datepicker-header{
+        background-color: var(--base-color) !important;
+    }
+    .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-year, .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-month,
+    .p-datepicker .p-datepicker-header .p-datepicker-prev, .p-datepicker .p-datepicker-header .p-datepicker-next{
+        color: var(--white-color) !important;
+        font-size: 2rem !important;
+    }
+    
+}
+@media only screen and (min-width: 768px) and (max-width: 1224px)  {
+    .calendarSection{
+        float: inline-end;
+    }
+}
+@media only screen and  (max-width: 703px)  {
+    .calendarDataSection{
+        flex-wrap: wrap;
+    }
+    .calendarHeading{
+        padding: 0.5rem !important;
+    }
+    ::ng-deep{
+        .p-datepicker .p-datepicker-header .p-datepicker-title{
+            line-height: 0rem !important;
+        }
+        .p-datepicker-calendar th, td {
+            font-size: 1rem !important;
+        }
+        .p-datepicker table td > span{
+            padding: 0px !important;
+            width: 2rem !important;
+            height: 2rem !important;
+        }
+        .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-year, .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-month, .p-datepicker .p-datepicker-header .p-datepicker-prev, .p-datepicker .p-datepicker-header .p-datepicker-next {
+            font-size: 1rem !important;
+        }
+        .borderBox{
+            width: 100% !important;
+        }
+    }
+}
